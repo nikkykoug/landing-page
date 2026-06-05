@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="refresh" content="4;url=https://script.google.com/macros/s/AKfycbyMe6ktUuF-rJB4d_TzJuE-dB2KaQfu3snXAnqaki0KdIjfeSvHSRDESUeRxMZvdaD3/exec">
+<meta http-equiv="refresh" content="3;url=https://script.google.com/macros/s/AKfycbyMe6ktUuF-rJB4d_TzJuE-dB2KaQfu3snXAnqaki0KdIjfeSvHSRDESUeRxMZvdaD3/exec">
 <title>NIKKYKOUG</title>
 <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800,900&f[]=satoshi@400,500&display=swap" rel="stylesheet">
 <style>
@@ -109,7 +109,7 @@ body{min-height:100dvh;font-family:var(--font-body);background:var(--bg);color:v
   border-radius:var(--radius-full);
   background:linear-gradient(90deg,var(--accent),oklch(0.72 0.2 300),var(--accent-2));
   background-size:200% 100%;
-  animation:energy-progress 3.6s cubic-bezier(0.4,0,0.2,1) forwards, energy-shimmer 1.5s linear infinite;
+  animation:energy-progress 2.7s cubic-bezier(0.4,0,0.2,1) forwards, energy-shimmer 1.5s linear infinite;
   box-shadow:0 0 12px var(--accent-glow),0 0 4px oklch(0.65 0.22 280 / 0.6);
   position:relative;
 }
@@ -251,7 +251,7 @@ body{min-height:100dvh;font-family:var(--font-body);background:var(--bg);color:v
 
 (function(){
   var el=document.getElementById('pct');
-  var start=Date.now(), dur=3600;
+  var start=Date.now(), dur=3000;
   function tick(){
     var t=Math.min((Date.now()-start)/dur,1);
     var eased=t<1?1-Math.pow(1-t,3):1;
